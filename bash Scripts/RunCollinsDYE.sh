@@ -20,8 +20,15 @@
 # Wall clock limit:
 #SBATCH --time=02:00:00
 #
+# Log file location:
+#SBATCH --output="../SLURMlogs/job_%j.out"
+
+
+
+
+
 ## Command(s) to run (example):
 module load r/3.5.1
 module load r-packages/default
 
-R CMD BATCH CollinsDYE.R
+R CMD BATCH ../rScripts/CollinsDYE.R

@@ -130,6 +130,5 @@ LOB <- doLOBscreen(xsA=xset_a, match.ppm = 2.5,
 rt.restrict=T, exclude.oddFA=F)
 Sys.time()-tmx
 
-##Write file out
-write.csv(LOB@peakdata, file = paste0("CollinsDYE_", sim_pol, 
-".csv"))
+##Write report file
+
